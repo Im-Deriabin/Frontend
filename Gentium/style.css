@@ -1,0 +1,703 @@
+@font-face {
+    font-family:Avant;
+    src: url(Fonts/AvantGarde-Bold.woff2);
+}
+
+@font-face {
+    font-family: Tradegothic;
+    src: url(Fonts/tradegothic.woff2);
+}
+
+body
+{
+margin: 0%;
+font-family: Avant;
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.container
+{
+    width: 1301px;
+    height: 1015px;
+    background-image: url(img/hero_02.jpg);
+    background-repeat: no-repeat;
+    background-position:70% 9%;
+    background-size: 643px;
+    background-color: black;
+    box-sizing: border-box;
+
+}
+
+.top_bar
+{
+    display: flex;
+    align-items: flex-end;
+    width: 1301px;
+    height: 90px;
+    background-color:rgba(0, 0, 0, 1);
+    flex-direction: row;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+}
+
+.top_bar .logo
+{
+    font-size: 35px;
+    margin-left: 5%;
+    width: 30%;
+}
+
+.menu
+{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0%;
+    list-style: none; 
+
+}
+
+.menu li
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.menu li p
+{
+    margin: 0%;
+    margin-top: 8px;
+    transition: 0.8s;
+}
+
+.line
+{
+    width: 40%;
+    height: 3px;
+    background-color: #e9204f;
+}
+
+.menu li:hover p
+{
+    
+
+    width: 50%;
+    height: 2px;
+    background-color: #e9204f;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+    margin-left: 40px;
+    padding-top: 50px;
+}
+
+.line_content
+{
+    width: 13%;
+    height: 3px;
+    background-color: #e9204f;
+    margin: 0px;
+    position: relative;
+    top: 40px;
+}
+.content_text
+{
+    color: white;
+    font-size: 78px;
+    box-sizing: border-box;
+    width: 600px;
+}
+
+.started
+{
+    
+    font-size: 16px;
+    border: 3px solid #e9204f;
+    width: 190px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 0;
+    position: relative;
+    background: none;
+    
+    
+    
+}
+
+.started::before
+{
+    content: "";
+    display: block;
+    position:absolute;
+    background-color: #e9204f;
+    height: 100%;
+    top:0%;
+    left: 0%;
+    width: 0%;
+    transition: 1s;
+    z-index: -1;
+
+}
+
+.started:hover
+{
+    cursor: pointer;
+}
+
+.started:hover::before
+{
+    width: 100%;
+    transition: 1s;
+ 
+}
+
+.started p
+{
+    color:  white;
+    font-size: 16px;
+    margin: 0%;
+}
+
+.card_box
+{
+    
+    position: relative;
+    top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.card
+{
+    
+    width: 380px;
+    height: 390px;
+    background-color: #e9204f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    padding-top: 40px;
+    transition: 1100ms;
+}
+
+.card .icon svg path
+{
+    fill: #e9204f;
+    transition: 1500ms;;
+}
+
+.card:nth-child(1) svg path
+{
+    fill: white;
+}
+
+.card:nth-child(2)
+{
+    background-color: #1b1b1b;
+}
+
+.card:nth-child(3)
+{
+    background-color: #1b1b1b;
+    position: relative;
+    z-index: 2;
+}
+
+.big_text
+{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.text_card
+{
+    font-size: 17px;
+    color: white;
+    font-family:Tradegothic;
+    box-sizing: border-box;
+    width: 300px;
+    
+}
+
+.card_box i
+{
+    color: white;
+    font-size: 48px;
+    position: relative;
+    bottom: 60px;
+    margin: 0%;
+}
+
+.line_card
+{
+    width: 13%;
+    height: 3px;
+    background-color: white;
+    margin: 0px;
+}
+
+.icon
+{
+    width: 83px;
+    height: 83px;
+    margin: 0%;
+    position: relative;
+    bottom: 60px;
+    margin: 0%; 
+}
+
+.card:hover svg path
+{
+    fill:white;
+    transition: 1500ms;
+    
+}
+
+.card:hover
+{
+    background-color: #e9204f;
+    cursor: pointer;
+    transition: 1100ms;
+}
+
+.pink_rectangle
+{
+    background-color: #d71e49;
+    width: 400px;
+    height: 70px;
+    margin: 0px;
+    position: absolute;
+    z-index: 1;
+    left: 888px;
+    top: 1050px;
+}
+
+.section
+{
+    display: flex;
+    justify-content: center;
+    width: 1301px;
+    height: 150px;
+}
+
+.section div
+{
+    width: 3px;
+    height: 40px;
+    background-color: #e9204f;
+    
+}
+
+.section_servis
+{
+    width: 495px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    justify-content: space-around;
+    
+    
+}
+
+.line_servis
+{
+    
+    width: 40px;
+    height: 3px;
+    background-color: #e9204f;
+    margin: 0px;
+}
+
+.servis
+{
+    font-size: 48px;
+    margin: 0px;
+}
+
+.text_servis
+{
+    font-size: 18px;
+    margin: 0px;
+    color: #d71e49;
+    text-transform: uppercase;
+}
+
+.tile
+{
+    width: 403px;
+    height: 104px;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tile p
+{
+    font-size: 19px;
+    margin: 0px;
+    position: relative;
+    right: 50px;
+    transition: 1500ms;
+}
+
+.icon_tile
+{
+    width: 31px;
+    height: 40px;
+    margin: 0px;
+    position: relative;
+    bottom: 15px;
+}
+
+.icon_tile svg
+{
+    width: 8px;
+    height: 16px;
+    transition: 2500ms;
+}
+
+.icon_tile svg path
+{
+    fill: #f3f3f3;
+    transition: 1500ms;
+    
+}
+
+.tile:hover
+{
+    background-color: #d71e49;
+    transition: 1500ms;
+
+}
+
+.tile:hover .icon_tile svg
+{
+    width: 71px;
+    height: 80px;
+    transition: 1500ms;
+    
+    
+}
+
+.tile:hover .icon_tile svg path
+{
+    fill: #747474;
+    transition: 1500ms;
+}
+
+.arrow
+{
+    margin: 0px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 9px;
+    right: 25px;
+    transition: 1500ms;
+}
+
+.tile:hover p
+{
+    color: white;
+    position: relative;
+    right: 0px;
+    transition: 1500ms;
+}
+
+.tile:hover .arrow
+{
+    position: relative;
+    right: 0px;
+    transition: 1500ms;
+}
+
+.tile:hover .arrow svg
+{
+    fill: white;
+}
+
+.arrow svg
+{
+    width: 30px;
+    fill: #808280;
+}
+
+.panel
+{
+    width: 1301px;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+.section2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1301px;
+    height: 250px;
+}
+
+.section2 div
+{
+    width: 2px;
+    height: 70px;
+    background-color: #e9204f;
+    
+}
+
+.section_conteiner
+{
+    width: 1301px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_conteiner .started p
+{
+    color: black;
+}
+
+.img_container
+{
+    display: flex;
+    justify-content: space-between;
+    width: 1301px;
+    
+}
+
+.img_box
+{
+    width: 425px;
+    height: 425px;
+    margin-top: 60px;
+    background-image: url(img/03-min-1-1024x683.jpg);
+    background-size: 500px 425px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    filter: grayscale();
+    transition: 1500ms;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_box:nth-child(2)
+{
+    background-image: url(img/04-min-1-1024x683.jpg);
+}
+
+.img_box:nth-child(3)
+{
+    background-image: url(img/07-min-1024x683.jpg);
+}
+
+.img_box:hover
+{
+    background-size: 700px 625px;
+    background-position: center;
+    
+    filter: none;
+    transition: 1500ms;
+}
+
+.text_img
+{
+    color: rgb(255, 255, 255,0);
+    font-size: 30px;
+    margin: 0px;
+    
+    transition: 1500ms;
+    
+}
+
+.text_img_small
+{
+    color: rgb(255, 255, 255,0);
+    font-family:Tradegothic;
+    font-size: 20px;
+    margin: 0px;
+    transition: 1500ms;
+}
+
+.img_box:hover .text_img,
+.img_box:hover .text_img_small
+{
+    color: rgb(255, 255, 255, 1);
+    transition: 3000ms;
+
+}
+
+.text_section
+{
+    
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    height: 200px;
+    width: 750px;
+}
+
+.text_item
+{
+    font-family: Tradegothic;
+    font-size: 17px;
+}
+
+.foto_conteiner
+{
+    margin-top: 40px;
+    width: 1301px;
+    height: 630px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.big_img
+{
+    width: 60%;
+    height: 630px;
+    background-image: url(img/about_01.jpg);
+    background-size: cover;
+    filter: grayscale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.foto2
+{
+    width: 40%;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small_img
+{
+    
+    width: 450px;
+    height: 47%;
+    background-image: url(img/about_03.jpg);
+    background-size: cover;
+    filter: grayscale(1);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    
+}
+
+.small_img:nth-child(2)
+{
+    background-image: url(img/about_02.jpg);
+}
+
+.big_img .text_img, 
+.foto2 .text_img
+{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.big_img .text_img_small, 
+.foto2 .text_img_small
+{
+    color: rgb(255, 255, 255);
+    font-family:Tradegothic;
+    font-size: 17px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.big_img:hover,
+.small_img:hover
+{
+    filter: none;
+    transition: 1500ms;
+    cursor: pointer;
+}
+
+.container_text
+{
+    
+    width: 1301px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.text_box
+{
+    width: 25%;
+    height: 200px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+
+}
+
+.text_box .text_img
+{
+    color: black;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.text_box .text_img_small
+{
+    color: black;
+    font-family:Tradegothic;
+    font-size: 17px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
