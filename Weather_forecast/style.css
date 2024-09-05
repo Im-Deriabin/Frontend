@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: url(/body_fon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.btn {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weather {
+  width: 100%;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.weather .current_weather {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.weather .current_weather img {
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+}
+.weather .current_weather .curent_city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weather .current_weather .current_info {
+  margin-right: 20px;
+}
+.weather .current_weather .current_info .temp {
+  font-size: 50px;
+}
+.weather .current_weather .current_info .date {
+  font-size: 20px;
+}
+.weather .forecast_for_the_week {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.weather .forecast_for_the_week .card_day {
+  width: 24%;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.weather .forecast_for_the_week .card_day p {
+  font-weight: 900;
+}
+.weather .forecast_for_the_week .card_day .day_of_the_week {
+  font-size: 24px;
+}
+.weather .forecast_for_the_week .card_day .humidity {
+  font-size: 18px;
+}
+.weather .forecast_for_the_week .card_day img {
+  width: 150px;
+  height: 150px;
+}
+.weather .forecast_for_the_week .card_day .temperature_on_this_day {
+  font-size: 25px;
+}/*# sourceMappingURL=style.css.map */

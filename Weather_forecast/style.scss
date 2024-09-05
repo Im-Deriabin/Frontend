@@ -1,0 +1,100 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-image: url(/body_fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    color: white;
+}
+
+
+
+.btn{
+    color: white;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.weather{
+    width: 100%;
+    height: 500px;
+    background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.3);
+    border: 1px solid black;
+    border-radius: 20px;
+
+    .current_weather{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            margin-left: 20px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .curent_city{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .current_info{
+
+            margin-right: 20px;
+            .temp{
+                font-size: 50px;
+            }
+
+            .date{
+                font-size: 20px;
+            }
+
+
+        }
+    }
+
+    .forecast_for_the_week{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        .card_day{
+
+            width: 24%;
+            border: 1px solid black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            p{
+                font-weight: 900;
+                
+            }
+            .day_of_the_week{
+                font-size: 24px;
+            }
+
+            .humidity{
+                font-size: 18px;
+            }
+
+            img{
+                width: 150px;
+                height: 150px;
+            }
+
+            .temperature_on_this_day{
+                font-size: 25px;
+            }
+        }
+    }
+}
