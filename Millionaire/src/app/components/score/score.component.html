@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="score">
+        <div class="help">
+            <div><img src="assets\image\50-50_2018.webp" /></div>
+            <div><img src="assets\image\ATA_2018.webp"/></div>
+            <div><img src="assets\image\PAF_2018.webp"></div>
+        </div>
+        
+        <ol reversed>
+            <li [style.color]="score>=5?'orange':''">1.000.000</li>
+            <li [style.color]="score>=4?'orange':''">800.000</li>
+            <li [style.color]="score>=3?'orange':''">600.000</li>
+            <li [style.color]="score>=2?'orange':''">400.000</li>
+            <li [style.color]="score>=1?'orange':''">200.000</li>
+        </ol>
+    </div>
+</div>

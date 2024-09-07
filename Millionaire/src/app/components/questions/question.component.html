@@ -1,0 +1,13 @@
+<div class="container_question">
+    <div class="question"><h1>{{question.question}}</h1></div>
+
+    <ul class="answer_list">
+        <li class="answer" *ngFor=" let answer of question.answers; index as i" 
+        (click)="onChoiseClick(question.answers[i])"
+        [style.background-color]="(clickAnswer=='corect') && (answer.corect==true)?'green': (clickAnswer=='incorect') && (answer.corect==false)?'red': ''" >
+            {{answer.answer}}
+        </li>
+    </ul>
+</div>
+
+

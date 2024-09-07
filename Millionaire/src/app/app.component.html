@@ -1,0 +1,11 @@
+<div [ngStyle]="{'background-image': 'url(assets/image/fon.jpg)'}" class="home_page">
+  <app-score [score]="scoreParent"></app-score>
+  <app-question *ngFor="let question of questions; index as i" 
+  [question]="question" (outAnswer)="outAnswer($event)"
+  [style.display]="i==0 && !game_over && scoreParent!=5?'':'none'"></app-question>
+  <app-game-over [style.display]="game_over?'':'none'"></app-game-over>
+  <app-winner [style.display]="scoreParent==5?'':'none'"></app-winner>
+</div>
+
+
+
